@@ -1,0 +1,44 @@
+
+.start{
+
+display:grid;
+width: 100vw;
+grid-template-columns: 10vw 1fr 600px;
+grid-template-rows: 150px 500px 300px;
+grid-template-areas: 
+'hd hd hd'
+'nv sk1 bd'
+'nv sk2 sk2'
+;
+
+}
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+header{
+display:flex;
+justify-content: space-between;
+align-content: center;
+grid-area: hd;
+background-color: rgb(255, 193, 7);
+font-family: "Kodchasan", sans-serif;
+}
+
+nav{
+    grid-area: nv;
+}
+#skt1{
+    grid-area: sk1;
+}
+#skt2{
+    grid-area: sk2;
+}
+#img{
+    grid-area: bd;
+}
+
+
+
+
