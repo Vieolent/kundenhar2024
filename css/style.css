@@ -8,13 +8,14 @@ grid-template-rows: 150px 500px 300px;
 grid-template-areas: 
 'hd hd hd'
 'nv sk1 bd'
-'nv sk2 sk2'
+'ft ft ft'
 ;
 
 }
 body{
     margin: 0px;
     overflow-x: hidden;
+    background-color: rgb(247, 221, 143);
 }
 
 header{
@@ -23,22 +24,65 @@ justify-content: space-between;
 align-content: center;
 grid-area: hd;
 background-color: rgb(255, 193, 7);
-font-family: "Kodchasan", sans-serif;
+font-family: "Averia Sans Libre", sans-serif;
+font-size: 230%;
+padding: 10px;
+}
+.averia{
+    font-family: "Averia Sans Libre", sans-serif;
 }
 
 nav{
     grid-area: nv;
+    background-color: rgb(255, 193, 7);
+    border: 2px;
+    border-color: black;
+    border-radius: 15px;
+    margin: 15px 0 15px 15px;
+    border-style: solid;
+    display: flex;  
+    flex-direction: column;
+    text-align: center;
+}
+
+nav a{
+    flex: 1;
+    color: rgb(57, 92, 173);
+}
+nav a:hover{
+    background-color:rgb(57, 92, 173) ;
+    color:rgb(255, 193, 7)
 }
 #skt1{
     grid-area: sk1;
+    background-color: rgb(247, 221, 143);
+    padding: 17px;
+    font-size: 95%;
 }
-#skt2{
-    grid-area: sk2;
+#footer{
+    grid-area: ft;
+    background-color: rgb(255, 193, 7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 100%;
+    padding: 0 30px 15px 15px;
 }
 #img{
     grid-area: bd;
+    background-color: rgb(247, 221, 143);
+    margin: 15px 25px 0 0;
+}
+#magic{
+    border-radius: 50px;
 }
 
+#title{
+    align-self: center;
+}
 
+#footer p{
+    font-size: 20%;
+}
 
 
