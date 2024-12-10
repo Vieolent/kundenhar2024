@@ -1,5 +1,4 @@
-
-.start{
+.startstart{
 
 display:grid;
 width: 100vw;
@@ -12,13 +11,26 @@ grid-template-areas:
 ;
 
 }
+#cardstart{
+display: grid;
+width: 100vw;
+grid-template-columns: 10vw 30vw 30vw 30vw;
+grid-template-rows: 150px 100px 350px 350px 300px;
+grid-template-areas: 
+'hd hd hd hd'
+'nv tl tl tl'
+'nv a1 a2 a3'
+'nv a4 a5 a6'
+'ft ft ft ft'
+;
+}
 body{
     margin: 0px;
     overflow-x: hidden;
     background-color: rgb(247, 221, 143);
 }
 
-header{
+.bighd{
 display:flex;
 justify-content: space-between;
 align-content: center;
@@ -28,6 +40,46 @@ font-family: "Averia Sans Libre", sans-serif;
 font-size: 230%;
 padding: 10px;
 }
+#smallhd{
+display:flex;
+align-items: center;
+justify-content: center;
+grid-area: tl;
+background-color: rgb(255, 193, 7);
+padding: 15px;
+margin: 15px;
+border: 2px;
+border-color:black;
+border-radius: 15px;
+border-style: solid;
+font-size: 150%;
+}
+.minihd{
+font-size: 170%;
+}
+.card{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+font-family: "Averia Sans Libre", sans-serif;
+background-color:rgb(255, 193, 7);
+border: 2px;
+border-color:black;
+border-radius: 15px;
+border-style: solid;
+padding: 15px;
+margin: 7px;
+
+}
+.card img{
+    height: 200px ;
+    border: 1px;
+    border-color:black;
+    border-style: solid;
+    border-radius: 5px;
+
+}
+
 .averia{
     font-family: "Averia Sans Libre", sans-serif;
 }
@@ -36,22 +88,26 @@ nav{
     grid-area: nv;
     background-color: rgb(255, 193, 7);
     border: 2px;
-    border-color: black;
+    border-color:black;
     border-radius: 15px;
-    margin: 15px 0 15px 15px;
+    margin: 15px 0 7px 15px;
     border-style: solid;
     display: flex;  
     flex-direction: column;
     text-align: center;
+
+
 }
 
 nav a{
     flex: 1;
-    color: rgb(57, 92, 173);
+    color: black; 
+
 }
 nav a:hover{
-    background-color:rgb(57, 92, 173) ;
-    color:rgb(255, 193, 7)
+    background-color:rgb(247, 221, 143) ; 
+    color:black;
+    border-radius: 15px;
 }
 #skt1{
     grid-area: sk1;
@@ -61,6 +117,7 @@ nav a:hover{
     overflow: hidden;
 }
 #footer{
+    margin-top: 10px;
     grid-area: ft;
     background-color: rgb(255, 193, 7);
     display: flex;
@@ -86,4 +143,21 @@ nav a:hover{
     font-size: 20%;
 }
 
-
+#card1{
+    grid-area: a1;
+}
+#card2{
+    grid-area: a2;
+}
+#card3{
+    grid-area: a3;
+}
+#card4{
+    grid-area: a4;
+}
+#card5{
+    grid-area: a5;
+}
+#card6{
+    grid-area: a6;
+}
