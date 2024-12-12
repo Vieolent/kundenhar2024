@@ -1,29 +1,43 @@
 .startstart{
-
-display:grid;
-width: 100vw;
-grid-template-columns: 10vw 1fr 600px;
-grid-template-rows: 150px 500px 300px;
-grid-template-areas: 
-'hd hd hd'
-'nv sk1 bd'
-'ft ft ft'
-;
-
+    
+    display:grid;
+    width: 100vw;
+    grid-template-columns: 10vw 1fr 600px;
+    grid-template-rows: 150px 500px 300px;
+    grid-template-areas: 
+    'hd hd hd'
+    'nv sk1 bd'
+    'ft ft ft'
+    ;
+    
 }
 #cardstart{
-display: grid;
-width: 100vw;
-grid-template-columns: 10vw 30vw 30vw 30vw;
-grid-template-rows: 150px 100px 350px 350px 300px;
-grid-template-areas: 
-'hd hd hd hd'
-'nv tl tl tl'
-'nv a1 a2 a3'
-'nv a4 a5 a6'
-'ft ft ft ft'
-;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 10vw 30vw 30vw 30vw;
+    grid-template-rows: 150px 100px 350px 350px 300px;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'nv tl tl tl'
+    'nv a1 a2 a3'
+    'nv a4 a5 a6'
+    'ft ft ft ft'
+    ;
 }
+#supportstart{
+    display:grid;
+    width:100vw;
+    grid-template-columns: 10vw 90vw;
+    grid-template-rows: 150px 100px 500px 300px 300px 300px;
+    grid-template-areas: 
+    'hd hd'
+    'nv tl'
+    'nv s1'
+    'nv s2'
+    'nv s3'
+    'ft ft';
+}
+
 body{
     margin: 0px;
     overflow-x: hidden;
@@ -31,46 +45,47 @@ body{
 }
 
 .bighd{
-display:flex;
-justify-content: space-between;
-align-content: center;
-grid-area: hd;
-background-color: rgb(255, 193, 7);
-font-family: "Averia Sans Libre", sans-serif;
-font-size: 230%;
-padding: 10px;
-margin-right: 7px;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    grid-area: hd;
+    background-color: rgb(255, 193, 7);
+    font-family: "Averia Sans Libre", sans-serif;
+    font-size: 230%;
+    padding: 10px;
+    margin-right: 7px;
 }
-#smallhd{
-display:flex;
-align-items: center;
-justify-content: center;
-grid-area: tl;
-background-color: rgb(255, 193, 7);
-padding: 15px;
-margin: 15px 25px 7px 7px;
-border: 2px;
-border-color:black;
-border-radius: 15px;
-border-style: solid;
-font-size: 150%;
+.smallhd{
+    font-family: "Averia Sans Libre", sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: tl;
+    background-color: rgb(255, 193, 7);
+    padding: 15px;
+    margin: 15px 25px 7px 7px;
+    border: 2px;
+    border-color:black;
+    border-radius: 15px;
+    border-style: solid;
+    font-size: 150%;
 }
 .minihd{
-font-size: 170%;
+    font-size: 170%;
 }
 .card{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-font-family: "Averia Sans Libre", sans-serif;
-background-color:rgb(255, 193, 7);
-border: 2px;
-border-color:black;
-border-radius: 15px;
-border-style: solid;
-padding: 15px;
-margin: 7px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "Averia Sans Libre", sans-serif;
+    background-color:rgb(255, 193, 7);
+    border: 2px;
+    border-color:black;
+    border-radius: 15px;
+    border-style: solid;
+    padding: 15px;
+    margin: 7px;
+    
 }
 .card img{
     height: 200px ;
@@ -78,7 +93,7 @@ margin: 7px;
     border-color:black;
     border-style: solid;
     border-radius: 5px;
-
+    
 }
 
 .averia{
@@ -96,14 +111,14 @@ nav{
     display: flex;  
     flex-direction: column;
     text-align: center;
-
-
+    
+    
 }
 
 nav a{
     flex: 1;
     color: black; 
-
+    
 }
 nav a:hover{
     background-color:rgb(247, 221, 143) ; 
@@ -127,6 +142,14 @@ nav a:hover{
     font-size: 100%;
     padding: 0 30px 15px 15px;
 }
+.block{
+    margin: 7px 25px 7px 7px;
+    font-family: "Averia Sans Libre", sans-serif;
+    padding: 15px;
+}
+.block h3{
+    font-size: 150%;
+}
 #img{
     grid-area: bd;
     background-color: rgb(247, 221, 143);
@@ -142,6 +165,10 @@ nav a:hover{
 
 #footer p{
     font-size: 20%;
+}
+#history{
+    grid-area: s1;
+
 }
 
 #card1{
