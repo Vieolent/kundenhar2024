@@ -39,6 +39,7 @@ background-color: rgb(255, 193, 7);
 font-family: "Averia Sans Libre", sans-serif;
 font-size: 230%;
 padding: 10px;
+margin-right: 7px;
 }
 #smallhd{
 display:flex;
@@ -47,7 +48,7 @@ justify-content: center;
 grid-area: tl;
 background-color: rgb(255, 193, 7);
 padding: 15px;
-margin: 15px;
+margin: 15px 25px 7px 7px;
 border: 2px;
 border-color:black;
 border-radius: 15px;
@@ -90,7 +91,7 @@ nav{
     border: 2px;
     border-color:black;
     border-radius: 15px;
-    margin: 15px 0 7px 15px;
+    margin: 15px 7px 7px 15px;
     border-style: solid;
     display: flex;  
     flex-direction: column;
@@ -151,6 +152,7 @@ nav a:hover{
 }
 #card3{
     grid-area: a3;
+    margin-right: 25px;
 }
 #card4{
     grid-area: a4;
@@ -160,4 +162,5 @@ nav a:hover{
 }
 #card6{
     grid-area: a6;
+    margin-right: 25px;
 }
