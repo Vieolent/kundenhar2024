@@ -149,6 +149,32 @@ nav a:hover{
 }
 .block h3{
     font-size: 150%;
+    margin: 0px;
+}
+#ad{
+    grid-area: s2;
+    background-color: rgb(255, 193, 7);   
+    display: flex;
+    align-content: start;
+    border: 2px;
+    border-color:black;
+    border-radius: 15px;
+    border-style: solid;
+}
+.block_text{
+    display: flex;
+    flex-direction: column;
+}
+.block_text h3{
+    margin: 0px;
+}
+#contact{
+    grid-area: s3;
+    display: flex;
+    align-content: start;
+}
+#contact img{
+    margin-left: 30px;
 }
 #img{
     grid-area: bd;
@@ -168,7 +194,7 @@ nav a:hover{
 }
 #history{
     grid-area: s1;
-
+    
 }
 
 #card1{
